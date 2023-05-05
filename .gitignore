@@ -1,0 +1,11 @@
+##### IDE
+.DS_Store
+.idea
+
+##### PHP files
+# Test files
+*test.php
+*test*.php
+*/test
+stundenbuch-server/db_config.php
+stundenbuch-server/pw_config.php
