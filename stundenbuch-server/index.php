@@ -1,6 +1,7 @@
 <?php
 
 require_once 'db_config.php';
+require_once 'functions.php';
 require_once 'pw_config.php';
 
 // Password check
