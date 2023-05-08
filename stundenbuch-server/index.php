@@ -58,3 +58,5 @@ if ($result->num_rows > 0) {
     $area_lit = $row['area_lit'];
     $lit_comment = $row['lit_comment'];
 }
+
+require_once 'output.php';
