@@ -1,0 +1,191 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "beten im alltag",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "LaudesIntent",
+          "slots": [
+            {
+              "name": "DialogSlot",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{DialogSlot}"
+              ]
+            }
+          ],
+          "samples": [
+            "Bete",
+            "Morgengebet jetzt",
+            "Laudes jetzt",
+            "Starte Morgengebet",
+            "Starte Laudes",
+            "Starte das Morgengebet",
+            "Starte die Laudes",
+            "Beginne das Morgengebet",
+            "Beginne die Laudes",
+            "Beginne Morgengebet",
+            "Beginne Laudes",
+            "Jetzt anfangen",
+            "Anfangen",
+            "Jetzt Morgengebet",
+            "Jetzt Laudes",
+            "Jetzt beten",
+            "Zusammen beten",
+            "Beten Morgengebet",
+            "Beten Laudes",
+            "Beten",
+            "Laudes beten",
+            "Bete mit mir das Morgengebet",
+            "Morgengebet beten",
+            "Ich möchte das Morgengebet beten",
+            "Lass uns das Morgengebet beten",
+            "Morgengebet",
+            "Ich möchte die Laudes beten.",
+            "Lass uns die Laudes beten.",
+            "Bete mit mir die Laudes",
+            "Laudes"
+          ]
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "LaudesExplainIntent",
+          "slots": [
+            {
+              "name": "DialogSlot",
+              "type": "AMAZON.SearchQuery",
+              "samples": [
+                "{DialogSlot}"
+              ]
+            }
+          ],
+          "samples": [
+            "Erklärung des Morgengebets",
+            "Morgengebet erklärt",
+            "Laudes erklärt",
+            "Wie kann ich beten",
+            "Wie geht das",
+            "Ablauf",
+            "Wie geht der Ablauf",
+            "Ablauf des Morgengebets",
+            "Ablauf der Laudes",
+            "Erläuterung für das Morgengebet",
+            "Erläuterung für die Laudes",
+            "Erläuterung",
+            "Anleitung für das Morgengebet",
+            "Anleitung für die Laudes",
+            "Anleitung",
+            "Wie betet man",
+            "Wie betet man das Morgengebet",
+            "Wie betet man die Laudes",
+            "Unterstütze mich beim Morgengebet",
+            "Unterstütze mich bei der Laudes",
+            "Unterstütze mich beim Beten",
+            "Erkläre mir das Beten",
+            "Erkläre mir Beten",
+            "Hilf mir bei der Laudes",
+            "Hilf mir beim Morgengebet",
+            "Erkläre die Laudes",
+            "Erkläre das Morgengebet",
+            "Erkläre",
+            "Erklärung",
+            "Laudes erklären",
+            "Morgengebet erklären",
+            "Erkläre Morgengebet",
+            "Erkläre mir das Morgengebet",
+            "Erkläre Laudes",
+            "Erkläre mir die Laudes"
+          ]
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "LaudesIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "DialogSlot",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.230675195678.459793571284"
+              }
+            }
+          ],
+          "delegationStrategy": "SKILL_RESPONSE"
+        },
+        {
+          "name": "LaudesExplainIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "DialogSlot",
+              "type": "AMAZON.SearchQuery",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.816881637968.1590725156547"
+              }
+            }
+          ],
+          "delegationStrategy": "SKILL_RESPONSE"
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.230675195678.459793571284",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Bitte sage jetzt den nächsten Gebetsabschnitt der Hore auf."
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.816881637968.1590725156547",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "Bitte sage jetzt den nächsten Gebetsabschnitt der Hore auf."
+          }
+        ]
+      }
+    ]
+  },
+  "version": "11"
+}
