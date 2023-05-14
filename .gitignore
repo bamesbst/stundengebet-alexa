@@ -9,3 +9,6 @@
 */test
 stundenbuch-server/db_config.php
 stundenbuch-server/pw_config.php
+
+## Alexa Developer Console
+alexa-skill/lambda/local-debugger.js
