@@ -8,6 +8,7 @@ Die Dateien sind jeweils jährlich zu generieren und werden im Verzeichnis unter
 ### Files
 * Die Datei `dli_daily.sql` enthält die Datenbankstruktur und bildet somit die Felder (Spalten) der Tabelle `dli_daily` ab. Diese Datei ist jahresunabhängig.
 * Die Datei `YEAR-dli_daily_content.sql` enthält die Daten (Zeilen) der Tabelle `dli_daily` für jeden Tag des jeweiligen Jahres.
+* Die Datei `display-database.php` enthält ein PHP-Skript, welches die derzeit bestehenden Daten (für Redaktions- und Demonstrationszwecke) anzeigt. Diese Datei muss auf dem zugehörigen Webserver ausgeführt werden.
 
 ## Structure
 Die Struktur der Tabelle `dli_daily` umfasst:
@@ -23,6 +24,9 @@ Die Struktur der Tabelle `dli_daily` umfasst:
 	4. Vesper (`stb_vespers_`)
 	5. Kleine Horen (Terz: `stb_3_`, Sext: `stb_3_`, Non: `stb_9_`)
 	6. Komplet (`stb_compline_`)
+
+### Data demonstration
+Die aktuellen Daten der Live-Datenbank können [hier (Link)](https://stundenbuch.bamesbst.de/laudes/display-database.php) angezeigt/geprüft werden
 	
 ## Copyright
 Diese Daten wurden unentgeltlich durch das Deutsche Liturgische Institut (DLI) zur Verfügung gestellt.
