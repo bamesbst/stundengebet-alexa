@@ -1,7 +1,45 @@
 {
   "interactionModel": {
+    "dialog": {
+      "intents": [
+        {
+          "slots": [
+            {
+              "name": "DialogSlot",
+              "elicitationRequired": true,
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.230675195678.459793571284"
+              }
+            }
+          ],
+          "name": "LaudesIntent",
+          "delegationStrategy": "SKILL_RESPONSE",
+          "confirmationRequired": false,
+          "prompts": {}
+        },
+        {
+          "slots": [
+            {
+              "name": "DialogSlot",
+              "elicitationRequired": true,
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.816881637968.1590725156547"
+              }
+            }
+          ],
+          "name": "LaudesExplainIntent",
+          "delegationStrategy": "SKILL_RESPONSE",
+          "confirmationRequired": false,
+          "prompts": {}
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
     "languageModel": {
-      "invocationName": "beten im alltag",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -24,7 +62,6 @@
           "samples": []
         },
         {
-          "name": "LaudesIntent",
           "slots": [
             {
               "name": "DialogSlot",
@@ -34,6 +71,7 @@
               ]
             }
           ],
+          "name": "LaudesIntent",
           "samples": [
             "Bete",
             "Morgengebet jetzt",
@@ -76,7 +114,6 @@
           "samples": []
         },
         {
-          "name": "LaudesExplainIntent",
           "slots": [
             {
               "name": "DialogSlot",
@@ -86,6 +123,7 @@
               ]
             }
           ],
+          "name": "LaudesExplainIntent",
           "samples": [
             "Erklärung des Morgengebets",
             "Morgengebet erklärt",
@@ -125,67 +163,28 @@
           ]
         }
       ],
-      "types": []
-    },
-    "dialog": {
-      "intents": [
-        {
-          "name": "LaudesIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "DialogSlot",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.230675195678.459793571284"
-              }
-            }
-          ],
-          "delegationStrategy": "SKILL_RESPONSE"
-        },
-        {
-          "name": "LaudesExplainIntent",
-          "confirmationRequired": false,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "DialogSlot",
-              "type": "AMAZON.SearchQuery",
-              "elicitationRequired": true,
-              "confirmationRequired": false,
-              "prompts": {
-                "elicitation": "Elicit.Slot.816881637968.1590725156547"
-              }
-            }
-          ],
-          "delegationStrategy": "SKILL_RESPONSE"
-        }
-      ],
-      "delegationStrategy": "ALWAYS"
+      "types": [],
+      "invocationName": "beten im alltag"
     },
     "prompts": [
       {
-        "id": "Elicit.Slot.230675195678.459793571284",
         "variations": [
           {
             "type": "PlainText",
             "value": "Bitte sage jetzt den nächsten Gebetsabschnitt der Hore auf."
           }
-        ]
+        ],
+        "id": "Elicit.Slot.230675195678.459793571284"
       },
       {
-        "id": "Elicit.Slot.816881637968.1590725156547",
         "variations": [
           {
             "type": "PlainText",
             "value": "Bitte sage jetzt den nächsten Gebetsabschnitt der Hore auf."
           }
-        ]
+        ],
+        "id": "Elicit.Slot.816881637968.1590725156547"
       }
     ]
-  },
-  "version": "11"
+  }
 }

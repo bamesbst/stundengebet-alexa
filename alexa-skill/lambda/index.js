@@ -219,7 +219,7 @@ const LaudesIntentHandler = {
             
             // Explain Laudes
             if (explainlaudes) {
-                text = 'Lass uns zusammen die <phoneme alphabet="ipa" ph="ˈlaʊ̯dˈɛs">Laudes</phoneme> beten! Mit diesem Morgengebet wollen wir am Morgen, bei Sonnenaufgang, mit Lobpreis und im Gebet zu Gott den Tag beginnen. <break time="0.7s"/>';
+                text = 'Lass uns zusammen die <phoneme alphabet="ipa" ph="ˈlaʊ̯dˈɛs">Laudes</phoneme> beten! Mit diesem <phoneme alphabet="ipa" ph="ˈmɔʁɡn̩ɡəˌbeːt">Morgengebet</phoneme> wollen wir am Morgen, bei Sonnenaufgang, mit Lobpreis und im Gebet zu Gott den Tag beginnen. <break time="0.7s"/>';
                 text = text + 'Um gemeinsam und im Wechsel zu Beten benötigst Du die Texte aus der Stundenbuch-App des Deutschen Liturgischen Instituts. Bist Du bereit?';
             }
             
