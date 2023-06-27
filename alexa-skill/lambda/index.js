@@ -260,7 +260,8 @@ const LaudesIntentHandler = {
             // Explain Laudes
             if (explainlaudes) {
                 pretext = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_positive_response_01"/>Am Beginn der <phoneme alphabet="ipa" ph="ˈlaʊ̯dˈɛs">Laudes</phoneme> steht der Hymnus. ';
-                pretext = pretext + 'Er stimmt in die Gebetszeit ein und besingt den Tagesanbruch. Wir beten die Blöcke im Wechsel. <break time="1.5s"/>';
+                pretext = pretext + 'Er stimmt in die Gebetszeit ein und besingt den Tagesanbruch. Wir beten die Blöcke im Wechsel. <break time="1.0s"/>';
+                pretext = pretext + 'Wenn Du möchtest, kannst Du zum Hymnus, der am Anfang dieser Gebetszeit steht, aufstehen. <break time="1.5s"/>';
             }
             
             handlerInput.attributesManager.setSessionAttributes(sessionAttributes); // Set session attributes
@@ -299,9 +300,10 @@ const LaudesIntentHandler = {
             // Explain Laudes
             if (explainlaudes) {
                 pretext = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_positive_response_01"/>Es folgt nun die Psalmodie. Sie besteht aus einem Psalm, dem alttestamentlichen Canticum und einem weiteren Psalm. ';
-                pretext = pretext + 'Mit dem Sprechen dieser Psalmtexte und Psalmlieder stehen wir betend vor Gott, so wie es auch schon in biblischen Zeiten mit diesen Texten geschah. <break time="0.7s"/>';
+                pretext = pretext + 'Mit dem Sprechen dieser Psalmtexte und Psalmlieder befinden wir uns betend vor Gott, so wie es auch schon in biblischen Zeiten mit diesen Texten geschah. <break time="0.7s"/>';
                 pretext = pretext + 'Vor jedem Psalm wird eine <phoneme alphabet="ipa" ph="ˈʁaːməndə">rahmende</phoneme> Antiphon gesprochen und einmal wiederholt. Das Gebet der Psalmverse folgt dann im Wechsel. ';
-                pretext = pretext + 'Am Ende jedes <phoneme alphabet="ipa" ph="psalms">Psalms</phoneme> wird die jeweilige Antiphon dann noch einmal gesprochen, aber nicht wiederholt. <break time="1.5s"/>';
+                pretext = pretext + 'Am Ende jedes <phoneme alphabet="ipa" ph="psalms">Psalms</phoneme> wird die jeweilige Antiphon dann noch einmal gesprochen, aber nicht wiederholt. <break time="1.0s"/>';
+                pretext = pretext + 'Wenn Du magst, setze Dich zum Gebet der Psalmen und zur darauffolgenden Lesung hin und versuche, Dich auf das Beten und Hören der biblischen Texte einzulassen. <break time="1.5s"/>';
             }
             
             pretext = pretext + '<audio src="soundbank://soundlibrary/computers/beeps_tones/beeps_tones_08"/><break time="0.5s"/>';
@@ -480,7 +482,8 @@ const LaudesIntentHandler = {
                         pretext = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_positive_response_01"/>Nach der Lesung folgt jetzt das Responsorium als kurzer Antwortgesang. <break time="0.7s"/>';
                         pretext = pretext + 'Am Anfang steht dabei das Responsum, welches einmal gesprochen und ein weiteres Mal wiederholt wird. ';
                         pretext = pretext + 'Danach wird der Versiekel gesprochen, als Antwort darauf folgt nunmehr erneut das Responsum, allerdings nur dessen zweiter Teil. ';
-                        pretext = pretext + 'Am Schluss, als Antwort auf das gesprochene "Ehre sei dem Vater", folgt nochmals das komplette Responsum. <break time="1.5s"/>';
+                        pretext = pretext + 'Am Schluss, als Antwort auf das gesprochene "Ehre sei dem Vater", folgt nochmals das komplette Responsum. <break time="1.0s"/>';
+                        pretext = pretext + 'Du kannst Dich ab hier wieder aufrecht hinstellen, um Dein Beten und Reflektieren dieser Texte, verbunden mit der Gemeinschaft der ganzen Kirche, zum Ausdruck zu bringen. <break time="1.5s"/>';
                     }
                     
                     pretext = pretext + '<audio src="soundbank://soundlibrary/computers/beeps_tones/beeps_tones_08"/><break time="0.5s"/>';
@@ -516,7 +519,9 @@ const LaudesIntentHandler = {
                     if (explainlaudes) {
                         pretext = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_positive_response_01"/>Nach der Lesung folgt jetzt das Responsorium als kurzer Antwortgesang. <break time="0.7s"/>';
                         pretext = pretext + 'In der Osterzeit wird dabei das Responsum einmal gesprochen und ein weiteres Mal wiederholt. ';
-                        pretext = pretext + 'Danach, als Antwort auf das gesprochene "Ehre sei dem Vater", folgt nochmals das komplette Responsum. <break time="1.5s"/>';
+                        pretext = pretext + 'Danach, als Antwort auf das gesprochene "Ehre sei dem Vater", folgt nochmals das komplette Responsum. <break time="1.0s"/>';
+                        pretext = pretext + 'Du kannst Dich ab hier wieder aufrecht hinstellen, um Dein Beten und Reflektieren dieser Texte, verbunden mit der Gemeinschaft der ganzen Kirche, zum Ausdruck zu bringen. <break time="1.5s"/>';
+
                     }
                     
                     pretext = pretext + '<audio src="soundbank://soundlibrary/computers/beeps_tones/beeps_tones_08"/><break time="0.5s"/>';
@@ -554,7 +559,7 @@ const LaudesIntentHandler = {
             // Explain Laudes
             if (explainlaudes) {
                 pretext = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_positive_response_01"/>Das Benedictus, welches wir nun beten werden, bildet den Höhepunkt der <phoneme alphabet="ipa" ph="ˈlaʊ̯dˈɛs">Laudes</phoneme>. ';
-                pretext = pretext + 'Der sogenannte "Lobgesang des Zacharias" ist dabei dem ersten Kapitel des Lukasevangeliums entnommen und preist die wunderbaren Heils-Taten Gottes. <break time="0.7s"/>';
+                pretext = pretext + 'Der sogenannte "Lobgesang des Zacharias" ist dabei dem ersten Kapitel des Lukasevangeliums entnommen und preist die wunderbaren Heils-Taten Gottes. Es lädt uns dazu ein, auch selbst im Angesicht unserer Heilsgeschichte und Heilserfahrungen das Wirken Gottes und unseren Glauben betend zu reflektieren. <break time="0.7s"/>';
                 pretext = pretext + 'Genau wie beim Psalmen-Gebet steht vor und nach dem Benedictus, welches im Wechsel gebetet wird, eine Antiphon. <break time="1.5s"/>';
             }
             
@@ -684,8 +689,16 @@ const LaudesIntentHandler = {
         if (sessionAttributes.majorposition === 22) {
             sessionAttributes.majorposition++;
             
+            pretext = '';
+            if (explainlaudes) {
+                pretext = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_positive_response_01"/> ';
+                pretext = pretext + 'Am Ende unseres Betens steht der Segen. <break time="1.0s"/>';
+                pretext = pretext + 'Während dieser Segen gesprochen wird, kannst Du Dich bekreuzigen, und damit den Segen auch an Deinem Körper erfahrbar werden lassen. <break time="1.5s"/>';
+            }
+            pretext = pretext + '<break time="0.5s"/><audio src="soundbank://soundlibrary/computers/beeps_tones/beeps_tones_08"/><break time="1.0s"/>';
+            
             text = 'Der Herr segne uns, <break time="0.5s"/> er bewahre uns vor Unheil und führe uns zum ewigen Leben. <break time="1.0s"/> Amen.';
-            sessionAttributes = PerikopeNoSpeak(sessionAttributes, text, '<break time="0.5s"/><audio src="soundbank://soundlibrary/computers/beeps_tones/beeps_tones_08"/><break time="1.0s"/>', '<break time="1.5s"/>');
+            sessionAttributes = PerikopeNoSpeak(sessionAttributes, text, pretext, '<break time="1.5s"/>');
         }
         
         
