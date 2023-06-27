@@ -3,9 +3,24 @@
 function loadIdHtml($id) {
 	$a = file_get_contents('https://dli.institute/kalender/getpericope.php?id=' . $id . '&count=on&break=off');
 	$b = html_entity_decode($a);
-	
+
+    // Joining separated words
+    $pattern = [
+        '/e\s+i\s+n\s+/i',
+        '/e\s+i\s+n\s+e\s+r\s+/i',
+        '/e\s+i\s+n\s+e\s+s\s+/i',
+        '/H\s+e\s+r\s+r\s+/i'
+    ];
+    $replacement = [
+        'ein',
+        'einer',
+        'eines',
+        'Herr'
+    ];
+    $c = preg_replace($pattern, $replacement, $b);
+
 	// Return
-	return $b;
+	return $c;
 }
 
 function parsePsalm($text) {
