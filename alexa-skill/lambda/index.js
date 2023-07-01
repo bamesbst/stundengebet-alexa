@@ -482,7 +482,8 @@ const LaudesIntentHandler = {
                         pretext = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_positive_response_01"/>Nach der Lesung folgt jetzt das Responsorium als kurzer Antwortgesang. <break time="0.7s"/>';
                         pretext = pretext + 'Am Anfang steht dabei das Responsum, welches einmal gesprochen und ein weiteres Mal wiederholt wird. ';
                         pretext = pretext + 'Danach wird der Versiekel gesprochen, als Antwort darauf folgt nunmehr erneut das Responsum, allerdings nur dessen zweiter Teil. ';
-                        pretext = pretext + 'Am Schluss, als Antwort auf das gesprochene "Ehre sei dem Vater", folgt nochmals das komplette Responsum. <break time="1.0s"/>';
+                        pretext = pretext + 'Am Schluss, als Antwort auf das gesprochene "Ehre sei dem Vater", folgt nochmals das komplette Responsum. ';
+                        pretext = pretext + 'Falls Du die Stundenbuch-App nutzen solltest, kannst Du Dich einfach an dem dort abgebildeten Ablauf orientieren. <break time="1.0s"/>';
                         pretext = pretext + 'Du kannst Dich ab hier wieder aufrecht hinstellen, um Dein Beten und Reflektieren dieser Texte, verbunden mit der Gemeinschaft der ganzen Kirche, zum Ausdruck zu bringen. <break time="1.5s"/>';
                     }
                     
@@ -664,10 +665,10 @@ const LaudesIntentHandler = {
             const randomIndex = Math.floor(Math.random() * 3);
             text = orationstart[randomIndex];
             
-            text = text + 'Vater unser im Himmel, <break time="0.5s"/> geheiligt werde dein Name. <break time="0.5s"/> Dein Reich komme. <break time="0.5s"/> ';
+            text = text + '<prosody rate="slow">Vater unser im Himmel, <break time="0.5s"/> geheiligt werde dein Name. <break time="0.5s"/> Dein Reich komme. <break time="0.5s"/> ';
             text = text + 'Dein Wille geschehe, <break time="0.5s"/> wie im Himmel so auf Erden. <break time="0.5s"/> Unser tägliches Brot gib uns heute. <break time="0.5s"/> ';
             text = text + 'Und vergib uns unsere Schuld, <break time="0.5s"/> wie auch wir vergeben unsern Schuldigern. <break time="0.5s"/> ';
-            text = text + 'Und führe uns nicht in Versuchung, <break time="0.5s"/> sondern erlöse uns von dem Bösen.';
+            text = text + 'Und führe uns nicht in Versuchung, <break time="0.5s"/> sondern erlöse uns von dem Bösen.</prosody> ';
             sessionAttributes = PerikopeNoSpeak(sessionAttributes, text, '<break time="0.5s"/><audio src="soundbank://soundlibrary/computers/beeps_tones/beeps_tones_08"/><break time="0.5s"/>', '<break time="2.0s"/>');
         }
         
