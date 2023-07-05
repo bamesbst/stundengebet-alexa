@@ -617,7 +617,7 @@ const LaudesIntentHandler = {
             sessionAttributes.psalmposition++;
             
             text = icprayer;
-            pretext = 'Wir wollen Fürbitte halten. <break time="2s"/>';
+            pretext = 'Gemeinsam wollen wir die Bitten für den heutigen Tag vor Gott bringen. <break time="2s"/>';
             
             if (explainlaudes) {
                 pretext = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_positive_response_01"/>Wir wollen Fürbitte halten. <break time="0.7s"/>';
