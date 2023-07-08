@@ -620,9 +620,9 @@ const LaudesIntentHandler = {
             pretext = 'Gemeinsam wollen wir die Bitten für den heutigen Tag vor Gott bringen. <break time="2s"/>';
             
             if (explainlaudes) {
-                pretext = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_positive_response_01"/>Wir wollen Fürbitte halten. <break time="0.7s"/>';
-                pretext = pretext + 'Nach dem einleitenden Gebet wird der Antwortruf auf die Fürbitten einmal gesprochen und dann wiederholt. ';
-                pretext = pretext + 'Im Anschluss an jede Fürbitte wird diese dann ebenfalls mit dem Ruf beantwortet. <break time="2.4s"/>';
+                pretext = '<audio src="soundbank://soundlibrary/ui/gameshow/amzn_ui_sfx_gameshow_positive_response_01"/>Gemeinsam wollen wir die Bitten für den heutigen Tag vor Gott bringen. <break time="0.7s"/>';
+                pretext = pretext + 'Nach dem einleitenden Gebet wird der Antwortruf auf die Bitten einmal gesprochen und dann wiederholt. ';
+                pretext = pretext + 'Im Anschluss an jede Bitte wird diese dann ebenfalls mit dem Ruf beantwortet. <break time="2.4s"/>';
             }
             
             sessionAttributes = PerikopeNoSpeak(sessionAttributes, text, pretext, '<break time="1.5s"/>');
