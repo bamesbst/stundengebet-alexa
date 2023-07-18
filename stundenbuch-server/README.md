@@ -17,4 +17,5 @@ Anschließend müssen die jeweiligen Parameter der beiden Konfigurationsdateien 
 	
 ## Copyright
 Eine Verwendung des Webservices ist nur im Zusammenhang mit dem Alexa-Skill zum liturgischen Stundengebet zulässig und bedarf der Genehmigung durch den Entwickler.
+
 Hinweis: Amazon, Alexa und alle zugehörigen Logos sind Marken von Amazon.com, Inc. oder seinen verbundenen Unternehmen.

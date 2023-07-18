@@ -2,7 +2,7 @@
 Alexa-Skill zum liturgischen Stundengebet (Laudes) auf dem Sprachassistenten "Amazon Alexa".
 
 ## Data
-Bei den hier vorliegenden Daten handelt es sich um den kompletten Datensatz, der zum Betrieb des Alexa-Skills erforderlich ist. Als Laufzeitumgebung sollte der ein entsprechendes Projekt in der Alexa Developer Console angelegt werden, von hieraus werden auch eine node-js-Umgebung sowie eine DynamoDB-Datenbank bereitgestellt.
+Bei den hier vorliegenden Daten handelt es sich um den kompletten Datensatz, der zum Betrieb des Alexa-Skills erforderlich ist. Als Laufzeitumgebung sollte ein entsprechendes Projekt in der Alexa Developer Console angelegt werden, von hieraus werden auch eine node-js-Umgebung sowie eine DynamoDB-Datenbank bereitgestellt.
 
 ### Files
 * Die Datei `skill.json` enthält die Rahmendaten des Skills und ist zu dessen Aufruf (*Invocation*) sowie zur grundsätzlichen technischen Struktur erforderlich.
@@ -15,4 +15,5 @@ Zur Installation des Skills müssen die o.g. Voraussetzungen geschaffen werden. 
 	
 ## Copyright
 Eine Verwendung ist nur im Zusammenhang mit dem Alexa-Skill zum liturgischen Stundengebet zulässig und bedarf der Genehmigung durch den Entwickler.
+
 Hinweis: Amazon, Alexa und alle zugehörigen Logos sind Marken von Amazon.com, Inc. oder seinen verbundenen Unternehmen.
