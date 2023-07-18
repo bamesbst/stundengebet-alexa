@@ -15,3 +15,4 @@ Zur Installation des Skills müssen die o.g. Voraussetzungen geschaffen werden. 
 	
 ## Copyright
 Eine Verwendung ist nur im Zusammenhang mit dem Alexa-Skill zum liturgischen Stundengebet zulässig und bedarf der Genehmigung durch den Entwickler.
+Hinweis: Amazon, Alexa und alle zugehörigen Logos sind Marken von Amazon.com, Inc. oder seinen verbundenen Unternehmen.

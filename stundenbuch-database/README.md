@@ -32,3 +32,4 @@ Die aktuellen Daten der Live-Datenbank können [hier (Link)](https://stundenbuch
 Diese Daten wurden unentgeltlich durch das Deutsche Liturgische Institut (DLI) zur Verfügung gestellt.
 Eine Verwendung ist nur im Zusammenhang mit dem Alexa-Skill zum liturgischen Stundengebet zulässig und bedarf ggfs. der Genehmigung durch das DLI.
 Die kommerzielle Nutzung der Daten ohne schriftliche Einwilligung des DLI ist ausgeschlossen.
+Hinweis: Amazon, Alexa und alle zugehörigen Logos sind Marken von Amazon.com, Inc. oder seinen verbundenen Unternehmen.
